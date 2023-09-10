@@ -45,16 +45,40 @@
       </div>
     </div>
   </nav>
-  https://youtu.be/9kUMCpQXpW4?si=aUw0mdlR38y5CRb2
 
-  <div class="banner">
-  </div>
   <div class="video-container">
-    <iframe
-      src="https://www.youtube-nocookie.com/embed/9kUMCpQXpW4?si=aCTAWWPiAmlk7T-O&autoplay=1&mute=1&loop=1"
-      title="Monclaudi" frameborder="0"
-      allowfullscreen></iframe>
+    <div id="player"></div>
   </div>
+
+<script>
+    // Load the YouTube IFrame Player API code asynchronously
+    var tag = document.createElement('script');
+    tag.src = 'https://www.youtube.com/iframe_api';
+    var firstScriptTag = document.getElementsByTagName('script')[0];
+    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+    // Create the player
+    var player;
+    function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+            videoId: '9kUMCpQXpW4',
+            playerVars: {
+                'autoplay': 1,
+                'loop': 1,
+                'mute': 1,
+                'playlist': '9kUMCpQXpW4'  // This is needed for the loop to work
+            },
+            events: {
+                'onReady': onPlayerReady,
+            }
+        });
+    }
+
+    // Start playing the video when it's ready
+    function onPlayerReady(event) {
+        event.target.playVideo();
+    }
+</script>
 
   <!-- PLAY PAGE -->
   <section class="about-me" id="about-me">
