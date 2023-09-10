@@ -297,7 +297,7 @@ iframe {
 }
 
 .about-header .title {
-	font-size: 4rem;
+	font-size: 6rem;
 	font-weight: 400;
 	margin-bottom: 2rem;
 }
@@ -310,15 +310,16 @@ iframe {
 }
 
 #aboutSong {
-	font-size: 1.5rem;
+	font-size: 2.5rem;
 	margin-bottom: 3rem;
 	width: 100%;
-	max-width: 625px;
+}
+#hi {
+	font-size: 5.5rem;
 }
 
 .about-content .image-container img {
 	width: 100%;
-	max-width: 300px;
 	border-radius: 1rem;
 }
 

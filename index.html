@@ -35,9 +35,9 @@
         <div class="icon cancel-btn">
           <i class="fas fa-times"></i>
         </div>
-        <li><a href="#about-me">About Me</a></li>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#play">Play</a></li>
         <li><a href="#songs">Choose Song</a></li>
-        <li><a href="#about">About</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
       <div class="icon menu-btn">
@@ -80,15 +80,36 @@
     }
 </script>
 
+  <!-- ABOUT SECTION -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="about-header">
+        <h2 class="title">About Me</h2>
+      </div>
+      <div class="about-content">
+        <div>
+          <p id="aboutSong">
+            <span id="hi">Hi,</span> I am Naomi Monsanto, raised in a Christian family where my love for music and God started.</br>
+            Amsterdam is the city where I currently live and where I developed myself as a musician.
+          </br></br>
+            To get an idea of how I sound like, I invite you to listen to few songs below.
+          </p>
+        </div>
+        <div class="image-container">
+          <img src="./assets/Image/naomi-303.jpeg" alt="song-banner" id="banner">
+        </div>
+      </div>
+    </div>
+  </section>
   <!-- PLAY PAGE -->
-  <section class="about-me" id="about-me">
+  <section class="play" id="play">
     <div class="container">
       <div class="card">
         <div class="card-body">
           <div class="row">
             <div class="left-col">
-              <h1 id="songName"> I Like Me Better </h1>
-              <h5>~<em id="songBy">Lauv</em></h5>
+              <h1 id="songName"> Make You Feel My Love - Cover Song </h1>
+              <h5>~<em id="songBy">Naomi Monsanto</em></h5>
             </div>
             <div class="right-col">
               <img src="./assets/Image/play.png" alt="play-button" id="icon">
@@ -98,7 +119,7 @@
         </div>
       </div>
       <audio id="song">
-        <source src="./assets/Songs/I Like Me Better - Lauv.mp3" type="audio/mp3">
+        <source src="./assets/Songs/make-you-feel-my-love-stereo.mp3" type="audio/mp3">
       </audio>
     </div>
   </section>
@@ -127,31 +148,6 @@
     </div>
   </section>
 
-  <!-- ABOUT SECTION -->
-  <section class="about" id="about">
-    <div class="container">
-      <div class="about-header">
-        <h2 class="title">About Song !!</h2>
-      </div>
-      <div class="about-content">
-        <div>
-          <p id="aboutSong">
-            "I Like Me Better" is a song recorded by American singer-songwriter Lauv. It was released on
-            May 19, 2017, and is included on Lauv's compilation album I Met You When I Was 18, which was
-            released on May 31, 2018. It has also been used in an Android Auto app commercial, in the
-            trailer of Netflix's romantic comedy To All the Boys I've Loved Before, and in the fall ball
-            episode of Netflix's comedy series The Expanding Universe of Ashley Garcia.
-          </p>
-          <a class="download-song" href="./assets/Songs/I Like Me Better - Lauv.mp3" id="download" download="Song.mp3">
-            Download Song
-          </a>
-        </div>
-        <div class="image-container">
-          <img src="./assets/Image/ilikemebetter.png" alt="song-banner" id="banner">
-        </div>
-      </div>
-    </div>
-  </section>
 
   <section class="contact" id="contact">
     <h2 class="title">Connect with me on Social media</h2>
