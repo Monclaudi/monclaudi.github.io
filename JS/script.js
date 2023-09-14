@@ -91,3 +91,32 @@ var loader = document.getElementById("loading");
 function preLoader() {
   loader.style.display = "none";
 }
+
+// CHOOSE A SONG
+const buttons = document.querySelectorAll(".btn");
+
+const photo = document.getElementById("banner");
+const song = document.getElementById("song");
+const songName = document.getElementById("songName");
+const songBy = document.getElementById("songBy");
+const aboutSong = document.getElementById("aboutSong");
+const title = document.getElementById("title");
+const download = document.getElementById("download");
+
+buttons[0].addEventListener("click", () => {
+  song.src = "./assets/Songs/make-you-feel-my-love-stereo.mp3";
+  songName.innerText = "Make You Feel My Love - Cover Song";
+  songBy.innerText = "Naomi Monsanto";
+  title.innerText = "Make You Feel My Love - Cover Song";
+  icon.src = "./assets/Image/play.png";
+  window.location.href="#play";
+});
+
+buttons[1].addEventListener("click", () => {
+  song.src = "./assets/Songs/arms-around-me-stereo.mp3";
+  songName.innerText = "Arms - Cover Song";
+  songBy.innerText = "Naomi Monsanto";
+  title.innerText = "Arms - Cover Song";
+  icon.src = "./assets/Image/play.png";
+  window.location.href="#play";
+});
