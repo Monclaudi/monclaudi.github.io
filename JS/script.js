@@ -113,6 +113,24 @@ buttons[0].addEventListener("click", () => {
 });
 
 buttons[1].addEventListener("click", () => {
+  song.src = "./assets/Songs/you-wont-relent.mp3";
+  songName.innerText = "You Won't Relent - Cover Song";
+  songBy.innerText = "Naomi Monsanto";
+  title.innerText = "You Won't Relent - Cover Song";
+  icon.src = "./assets/Image/play.png";
+  window.location.href="#play";
+});
+
+buttons[2].addEventListener("click", () => {
+  song.src = "./assets/Songs/lost-without-you-stereo.mp3";
+  songName.innerText = "Lost Without You - Cover Song";
+  songBy.innerText = "Naomi Monsanto";
+  title.innerText = "Lost Without You - Cover Song";
+  icon.src = "./assets/Image/play.png";
+  window.location.href="#play";
+});
+
+buttons[3].addEventListener("click", () => {
   song.src = "./assets/Songs/arms-around-me-stereo.mp3";
   songName.innerText = "Arms - Cover Song";
   songBy.innerText = "Naomi Monsanto";
