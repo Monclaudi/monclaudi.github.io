@@ -105,36 +105,55 @@ const download = document.getElementById("download");
 
 buttons[0].addEventListener("click", () => {
   song.src = "./assets/Songs/make-you-feel-my-love-stereo.mp3";
-  songName.innerText = "Make You Feel My Love - Cover Song";
+  songName.innerText = "Make You Feel My Love - Adele - Cover Song";
   songBy.innerText = "Naomi Monsanto";
-  title.innerText = "Make You Feel My Love - Cover Song";
+  title.innerText = "Make You Feel My Love - Adele - Cover Song";
   icon.src = "./assets/Image/play.png";
   window.location.href="#play";
 });
 
 buttons[1].addEventListener("click", () => {
+  const text = "You Won't Relent - Jesus Culture - Cover Song";
   song.src = "./assets/Songs/you-wont-relent.mp3";
-  songName.innerText = "You Won't Relent - Cover Song";
+  songName.innerText = text;
   songBy.innerText = "Naomi Monsanto";
-  title.innerText = "You Won't Relent - Cover Song";
+  title.innerText = text;
   icon.src = "./assets/Image/play.png";
   window.location.href="#play";
 });
 
 buttons[2].addEventListener("click", () => {
   song.src = "./assets/Songs/lost-without-you-stereo.mp3";
-  songName.innerText = "Lost Without You - Cover Song";
+  songName.innerText = "Lost Without You - Krezip - Cover Song";
   songBy.innerText = "Naomi Monsanto";
-  title.innerText = "Lost Without You - Cover Song";
+  title.innerText = "Lost Without You - Krezip - Cover Song";
   icon.src = "./assets/Image/play.png";
   window.location.href="#play";
 });
 
 buttons[3].addEventListener("click", () => {
   song.src = "./assets/Songs/arms-around-me-stereo.mp3";
-  songName.innerText = "Arms - Cover Song";
+  songName.innerText = "Arms - Christina Perri- Cover Song";
   songBy.innerText = "Naomi Monsanto";
-  title.innerText = "Arms - Cover Song";
+  title.innerText = "Arms - Christina Perri- Cover Song";
+  icon.src = "./assets/Image/play.png";
+  window.location.href="#play";
+});
+
+buttons[4].addEventListener("click", () => {
+  song.src = "./assets/Songs/lucky-jason-mraz-reverb-stereo.mp3";
+  songName.innerText = "Lucky - Jason Mraz ft. Colbie Caillat - Cover Song";
+  songBy.innerText = "Naomi Monsanto";
+  title.innerText = "Lucky - Jason Mraz ft. Colbie Caillat - Cover Song";
+  icon.src = "./assets/Image/play.png";
+  window.location.href="#play";
+});
+
+buttons[5].addEventListener("click", () => {
+  song.src = "./assets/Songs/all-of-me-reverb-stereo.mp3";
+  songName.innerText = "All Of Me - John Legend - Cover Song";
+  songBy.innerText = "Naomi Monsanto";
+  title.innerText = "All Of Me - John Legend - Cover Song";
   icon.src = "./assets/Image/play.png";
   window.location.href="#play";
 });
