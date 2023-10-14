@@ -4,6 +4,10 @@ const navbar = document.querySelector(".navbar");
 const menu = document.querySelector(".menu-list");
 const menuBtn = document.querySelector(".menu-btn");
 const cancelBtn = document.querySelector(".cancel-btn");
+const isNL = window.location.href.match('nl')?.length > 0
+const optionalPath = (isNL? ".":"");
+const playButtonLocation = optionalPath + "./assets/Image/play.png";
+const pauseButtonLocation = optionalPath + "./assets/Image/pause.png";
 
 menuBtn.onclick = () => {
   menu.classList.add("active");
@@ -69,10 +73,10 @@ icon.addEventListener("click", playMusic);
 function playMusic() {
   if (playSong.paused) {
     playSong.play();
-    icon.src = "./assets/Image/pause.png";
+    icon.src = pauseButtonLocation;
   } else {
     playSong.pause();
-    icon.src = "./assets/Image/play.png";
+    icon.src = playButtonLocation;
   }
 }
 
@@ -104,56 +108,56 @@ const title = document.getElementById("title");
 const download = document.getElementById("download");
 
 buttons[0].addEventListener("click", () => {
-  song.src = "./assets/Songs/make-you-feel-my-love-stereo.mp3";
+  song.src = optionalPath + "./assets/Songs/make-you-feel-my-love-stereo.mp3";
   songName.innerText = "Make You Feel My Love - Adele - Cover Song";
   songBy.innerText = "Naomi Monsanto";
   title.innerText = "Make You Feel My Love - Adele - Cover Song";
-  icon.src = "./assets/Image/play.png";
+  icon.src = playButtonLocation;
   window.location.href="#play";
 });
 
 buttons[1].addEventListener("click", () => {
   const text = "You Won't Relent - Jesus Culture - Cover Song";
-  song.src = "./assets/Songs/you-wont-relent.mp3";
+  song.src = optionalPath + "./assets/Songs/you-wont-relent.mp3";
   songName.innerText = text;
   songBy.innerText = "Naomi Monsanto";
   title.innerText = text;
-  icon.src = "./assets/Image/play.png";
+  icon.src = playButtonLocation;
   window.location.href="#play";
 });
 
 buttons[2].addEventListener("click", () => {
-  song.src = "./assets/Songs/lost-without-you-stereo.mp3";
+  song.src = optionalPath + "./assets/Songs/lost-without-you-stereo.mp3";
   songName.innerText = "Lost Without You - Krezip - Cover Song";
   songBy.innerText = "Naomi Monsanto";
   title.innerText = "Lost Without You - Krezip - Cover Song";
-  icon.src = "./assets/Image/play.png";
+  icon.src = playButtonLocation;
   window.location.href="#play";
 });
 
 buttons[3].addEventListener("click", () => {
-  song.src = "./assets/Songs/arms-around-me-stereo.mp3";
+  song.src = optionalPath + "./assets/Songs/arms-around-me-stereo.mp3";
   songName.innerText = "Arms - Christina Perri- Cover Song";
   songBy.innerText = "Naomi Monsanto";
   title.innerText = "Arms - Christina Perri- Cover Song";
-  icon.src = "./assets/Image/play.png";
+  icon.src = playButtonLocation;
   window.location.href="#play";
 });
 
 buttons[4].addEventListener("click", () => {
-  song.src = "./assets/Songs/lucky-jason-mraz-reverb-stereo.mp3";
+  song.src = optionalPath + "./assets/Songs/lucky-jason-mraz-reverb-stereo.mp3";
   songName.innerText = "Lucky - Jason Mraz ft. Colbie Caillat - Cover Song";
   songBy.innerText = "Naomi Monsanto";
   title.innerText = "Lucky - Jason Mraz ft. Colbie Caillat - Cover Song";
-  icon.src = "./assets/Image/play.png";
+  icon.src = playButtonLocation;
   window.location.href="#play";
 });
 
 buttons[5].addEventListener("click", () => {
-  song.src = "./assets/Songs/all-of-me-reverb-stereo.mp3";
+  song.src = optionalPath + "./assets/Songs/all-of-me-reverb-stereo.mp3";
   songName.innerText = "All Of Me - John Legend - Cover Song";
   songBy.innerText = "Naomi Monsanto";
   title.innerText = "All Of Me - John Legend - Cover Song";
-  icon.src = "./assets/Image/play.png";
+  icon.src = playButtonLocation;
   window.location.href="#play";
 });
