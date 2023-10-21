@@ -423,3 +423,9 @@ iframe {
 	text-align: center;
 	padding: 1rem;
 }
+
+.pricing .title {
+	font-size: 6rem;
+	font-weight: 400;
+	margin-bottom: 4rem;
+}
