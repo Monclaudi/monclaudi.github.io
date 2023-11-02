@@ -427,5 +427,9 @@ iframe {
 .pricing .title {
 	font-size: 6rem;
 	font-weight: 400;
-	margin-bottom: 4rem;
+}
+
+.testim .title {
+	font-size: 6rem;
+	font-weight: 400;
 }
