@@ -36,14 +36,13 @@
   <link rel="shortcut icon" href="../public/favicon.ico" type="image/x-icon">
   <link rel="apple-touch-icon" href="../public/apple-touch-icon.png">
 
-
-
   <!-- Import CSS File -->
   <link rel="stylesheet" href="../CSS/style.css">
   <link rel="stylesheet" href="../CSS/responsive.css">
   <link rel="stylesheet" href="https://unpkg.com/flickity@2.0.5/dist/flickity.css">
   <link rel="stylesheet" href="../CSS/pricing.css">
-
+  <link rel="stylesheet" href="../CSS/testimonials.css">
+  
   <!-- Import Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
@@ -66,7 +65,7 @@
         <li><a href="#about">Over mij</a></li>
         <li><a href="#play">Speel af</a></li>
         <li><a href="#songs">Kies een liedje</a></li>
-        <li><a href="#pricing">Prijzen</a></li>
+        <li><a href="#testim">Recencies</a></li>
         <li><a href="#contact">Contact</a></li>
         <li><a href="../">🇬🇧</a></li>
       </ul>
@@ -126,7 +125,7 @@
           </p>
         </div>
         <div class="image-container">
-          <img src="../assets/Image/naomi-atomium.jpeg" alt="Wedding singer Naomi" id="banner">
+          <img src="../assets/Image/RI1A8973.JPG" alt="Wedding singer Naomi" id="banner">
         </div>
       </div>
     </div>
@@ -172,64 +171,35 @@
     </div>
   </section>
 
-  <section class="pricing" id="pricing">
+<section class="testim" id="testim">
     <div class="container">
-      <h2 class="title">Prijzen</h2>
-      <div class="PriceBlocks-sliderContainer">
-        <div class="PriceBlocks-slider">
-          <div class="PriceBlock-container is-previous">
-            <div class="PriceBlock">
-              <div class="PriceBlock-top">
-                <div class="u-flex u-flexCenter PriceBlock-price">
-                  <span class="PriceBlock-dollar">€</span>
-                  <span class="PriceBlock-num">300</span>
+      <h2 class="title">Recencies</h2>
+        <div class="wrap">
+
+            <span id="right-arrow" class="arrow right fa fa-chevron-right"></span>
+            <span id="left-arrow" class="arrow left fa fa-chevron-left "></span>
+            <ul id="testim-dots" class="dots">
+                <li class="dot active"></li>
+                <li class="dot"></li>
+            </ul>
+            <div id="testim-content" class="cont">
+                <div class="active">
+                    <div class="img"><img src="../assets/Image/wedding-couple.png"/></div>
+                    <h2>Esther en Jeroen</h2>
+                    <p>"Naomi heeft bij ons de muziek in de kerk verzorgd. Ze kan prachtig zingen, denkt met ons mee en de communicatie verliep soepel. Samen met de andere muzikanten heeft ze er een onvergetelijke dienst van gemaakt! Echt een aanrader!"</p>
                 </div>
-              </div>
-              <ul class="u-list u-textPrimary u-textLarge PriceBlock-list">
-                <li><strong class="u-textPrimary">3 liederen </strong> van het repertoires</li>
-                <li><strong class="u-textPrimary">1 </strong> verzoeknummer</li>
-                <li>Inclusief reiskosten (tot 100km)</li>
-                <li>Gitaar en/of piano begeleiding</li>
-              </ul>
-            </div>
-          </div>
-          <div class="PriceBlock-container">
-            <div class="PriceBlock">
-              <div class="PriceBlock-top">
-                <div class="u-flex u-flexCenter PriceBlock-price">
-                  <span class="PriceBlock-dollar">€</span>
-                  <span class="PriceBlock-num">350</span>
+
+                <div>
+                    <div class="img"><img src="../assets/Image/wedding-ring.png"/></div>
+                    <h2>Daphne en Matthijs</h2>
+                    <p>"Toen ik nog huisgenootjes was met Naomi plofte ik regelmatig op haar bank neer om even tot rust te komen bij haar mooie gitaarspel en stemgeluid. Naar aanleiding hiervan hebben wij Naomi gevraagd om op onze bruiloft een lied te zingen dat veel voor mij betekende. Het was een ontzettend mooi moment! Naomi, we zijn je nog altijd dankbaar dat je je zangtalent voor ons hebt ingezet, het is een herinnering aan onze mooie dag die we niet snel zullen vergeten!"</p>
                 </div>
-              </div>
-              <ul class="u-list u-textPrimary u-textLarge PriceBlock-list">
-                <li><strong class="u-textPrimary">3 liederen </strong> van het repertoires</li>
-                <li><strong class="u-textPrimary">2 </strong> verzoeknummers</li>
-                <li>Inclusief reiskosten (tot 100km)</li>
-                <li>Gitaar en/of piano begeleiding</li>
-              </ul>
             </div>
-          </div>
-          <div class="PriceBlock-container is-next">
-            <div class="PriceBlock">
-              <div class="PriceBlock-top">
-                <div class="u-flex u-flexCenter PriceBlock-price">
-                  <span class="PriceBlock-dollar">€</span>
-                  <span class="PriceBlock-num">385</span>
-                </div>
-              </div>
-              <ul class="u-list u-textPrimary u-textLarge PriceBlock-list">
-                <li><strong class="u-textPrimary">4 liederen </strong> van het repertoires</li>
-                <li><strong class="u-textPrimary">2 </strong> verzoeknummers</li>
-                <li>Includes travel costs (till 100km)</li>
-                <li>Gitaar en/of piano begeleiding</li>
-              </ul>
-            </div>
-          </div>
+
         </div>
-      </div>
     </div>
   </section>
-
+  
   <section class="contact" id="contact">
     <h2 class="title">Je kunt mij bereiken via social media</h2>
     <h3 class="title">Email/Whatsapp voor een vrijblijvend kennismakingsgesprek</h3>
@@ -256,6 +226,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
   <script src="https://unpkg.com/flickity@2.0.5/dist/flickity.pkgd.min.js"></script>
   <script src="../JS/pricing.js"></script>
+  <script src="../JS/testimonials.js"> </script>  
   <!--  -->
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-XQ7GCKGSSN"></script>
