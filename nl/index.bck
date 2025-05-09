@@ -172,64 +172,6 @@
     </div>
   </section>
 
-  <section class="pricing" id="pricing">
-    <div class="container">
-      <h2 class="title">Prijzen</h2>
-      <div class="PriceBlocks-sliderContainer">
-        <div class="PriceBlocks-slider">
-          <div class="PriceBlock-container is-previous">
-            <div class="PriceBlock">
-              <div class="PriceBlock-top">
-                <div class="u-flex u-flexCenter PriceBlock-price">
-                  <span class="PriceBlock-dollar">€</span>
-                  <span class="PriceBlock-num">300</span>
-                </div>
-              </div>
-              <ul class="u-list u-textPrimary u-textLarge PriceBlock-list">
-                <li><strong class="u-textPrimary">3 liederen </strong> van het repertoires</li>
-                <li><strong class="u-textPrimary">1 </strong> verzoeknummer</li>
-                <li>Inclusief reiskosten (tot 100km)</li>
-                <li>Gitaar en/of piano begeleiding</li>
-              </ul>
-            </div>
-          </div>
-          <div class="PriceBlock-container">
-            <div class="PriceBlock">
-              <div class="PriceBlock-top">
-                <div class="u-flex u-flexCenter PriceBlock-price">
-                  <span class="PriceBlock-dollar">€</span>
-                  <span class="PriceBlock-num">350</span>
-                </div>
-              </div>
-              <ul class="u-list u-textPrimary u-textLarge PriceBlock-list">
-                <li><strong class="u-textPrimary">3 liederen </strong> van het repertoires</li>
-                <li><strong class="u-textPrimary">2 </strong> verzoeknummers</li>
-                <li>Inclusief reiskosten (tot 100km)</li>
-                <li>Gitaar en/of piano begeleiding</li>
-              </ul>
-            </div>
-          </div>
-          <div class="PriceBlock-container is-next">
-            <div class="PriceBlock">
-              <div class="PriceBlock-top">
-                <div class="u-flex u-flexCenter PriceBlock-price">
-                  <span class="PriceBlock-dollar">€</span>
-                  <span class="PriceBlock-num">385</span>
-                </div>
-              </div>
-              <ul class="u-list u-textPrimary u-textLarge PriceBlock-list">
-                <li><strong class="u-textPrimary">4 liederen </strong> van het repertoires</li>
-                <li><strong class="u-textPrimary">2 </strong> verzoeknummers</li>
-                <li>Includes travel costs (till 100km)</li>
-                <li>Gitaar en/of piano begeleiding</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
   <section class="contact" id="contact">
     <h2 class="title">Je kunt mij bereiken via social media</h2>
     <h3 class="title">Email/Whatsapp voor een vrijblijvend kennismakingsgesprek</h3>
