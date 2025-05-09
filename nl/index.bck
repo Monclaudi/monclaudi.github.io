@@ -1,1 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Meta tags -->
+  <title>Bruiloftszanger Website | Monclaudi | Naomi Monsanto</title>
+  <meta name="description" content="Professionele bruiloftszanger die betoverende melodieën verzorgt voor uw speciale dag in Nederland. Bedient grote steden waaronder Amsterdam, Rotterdam, Den Haag, Utrecht en meer.">
+  <meta name="keywords" content="bruiloftszanger, bruiloftsmuziek, live optreden, romantische liedjes, Nederland, Amsterdam, Rotterdam, Den Haag, Utrecht, Eindhoven, Groningen, Maastricht, Nijmegen, Enschede, Leiden, Tilburg, Haarlem">
+  <meta name="author" content="Naomi Monsanto">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph Tags voor Sociale Media -->
+  <meta property="og:title" content="Bruiloftszanger - Uw Naam">
+  <meta property="og:description" content="Professionele bruiloftszanger die betoverende melodieën verzorgt voor uw speciale dag in Nederland. Bedient grote steden waaronder Amsterdam, Rotterdam, Den Haag, Utrecht en meer.">
+  <meta property="og:url" content="https://www.monclaudi.nl">
+  <meta property="og:image" content="https://www.monclaudi.com/assets/Image/naomi-atomium.jpeg">
+  <meta property="og:region" content="Nederland">
+
+  <!-- Twitter Card Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Bruiloftszanger - Naomi Monsanto">
+  <meta name="twitter:description" content="Professionele bruiloftszanger die betoverende melodieën verzorgt voor uw speciale dag in Nederland. Bedient grote steden waaronder Amsterdam, Rotterdam, Den Haag, Utrecht en meer.">
+  <meta name="twitter:image" content="https://www.monclaudi.com/assets/Image/naomi-atomium.jpeg">
+  <meta name="twitter:site" content="@monclaudi_music"> <!-- Voeg hier uw Twitter-handle toe -->
+  <meta name="twitter:creator" content="@monclaudi_music"> <!-- Voeg hier uw Twitter-handle toe -->
+
+  <!-- Canonical Tag (indien nodig) -->
+  <link rel="canonical" href="https://www.monclaudi.nl">
+<!--  -->
+  <meta name="theme-color" content="#0e1313" />
+  <link rel="manifest" href="../manifest.json">
+  <link rel="shortcut icon" href="../public/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" href="../public/apple-touch-icon.png">
+
+
+
+  <!-- Import CSS File -->
+  <link rel="stylesheet" href="../CSS/style.css">
+  <link rel="stylesheet" href="../CSS/responsive.css">
+  <link rel="stylesheet" href="https://unpkg.com/flickity@2.0.5/dist/flickity.css">
+  <link rel="stylesheet" href="../CSS/pricing.css">
+
+  <!-- Import Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+
+<body onload="preLoader()">
+
+  <div id="loading"></div>
+
+  <!-- Go to Up button -->
+  <button onclick="topFunction()" id="moveTopBtn" title="Go to top"><i class="fas fa-angle-up"></i></button>
+
+  <!-- Navbar  -->
+  <nav class="navbar">
+    <div class="content">
+      <div class="logo"><a href="#">Monclaudi</a></div>
+      <ul class="menu-list">
+        <div class="icon cancel-btn">
+          <i class="fas fa-times"></i>
+        </div>
+        <li><a href="#about">Over mij</a></li>
+        <li><a href="#play">Speel af</a></li>
+        <li><a href="#songs">Kies een liedje</a></li>
+        <li><a href="#pricing">Prijzen</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="../">🇬🇧</a></li>
+      </ul>
+      <div class="icon menu-btn">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+  </nav>
+
+  <div class="video-container">
+    <div id="player"></div>
+  </div>
+
+<script>
+    // Load the YouTube IFrame Player API code asynchronously
+    var tag = document.createElement('script');
+    tag.src = 'https://www.youtube.com/iframe_api';
+    var firstScriptTag = document.getElementsByTagName('script')[0];
+    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+    // Create the player
+    var player;
+    function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+            videoId: '9kUMCpQXpW4',
+            playerVars: {
+                'autoplay': 1,
+                'loop': 1,
+                'mute': 1,
+                'playlist': '9kUMCpQXpW4'  // This is needed for the loop to work
+            },
+            events: {
+                'onReady': onPlayerReady,
+            }
+        });
+    }
+
+    // Start playing the video when it's ready
+    function onPlayerReady(event) {
+        event.target.playVideo();
+    }
+</script>
+
+  <!-- ABOUT SECTION -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="about-header">
+        <h2 class="title">Over mij</h2>
+      </div>
+      <div class="about-content">
+        <div>
+          <p id="aboutSong">
+            <span id="hi">Hoi,</span> Ik ben Naomi Monsanto, woonachtig in Amsterdam waar ik mijzelf als musicus heb ontwikkeld.</br>
+            Opgevoed in een christelijke familie is waar mijn liefde voor muziek en anderen laten genieten begon.
+          </br></br>
+          Als bruiloftszangeres luister ik graag naar jullie wensen en vind ik het leuk om te zoeken naar de beste manier om dat te realiseren. Ik nodig jullie uit om te luisteren naar mijn covers. Als jullie vragen hebben, stel ze dan gerust!
+          </p>
+        </div>
+        <div class="image-container">
+          <img src="../assets/Image/naomi-atomium.jpeg" alt="Wedding singer Naomi" id="banner">
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- PLAY PAGE -->
+  <section class="play" id="play">
+    <div class="container">
+      <div class="card">
+        <div class="card-body">
+          <div class="row">
+            <div class="left-col">
+              <h1 id="songName"> Make You Feel My Love - Cover Song </h1>
+              <h5>~<em id="songBy">Naomi Monsanto</em></h5>
+            </div>
+            <div class="right-col">
+              <img src="../assets/Image/play.png" alt="play-button" id="icon">
+              <p>Klik hier om af te spelen</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <audio id="song">
+        <source src="../assets/Songs/make-you-feel-my-love-stereo.mp3" type="audio/mp3">
+      </audio>
+    </div>
+  </section>
+
+  <!-- SELECT SONGS -->
+  <section class="songs" id="songs">
+    <div class="container">
+      <div class="songs-header">
+        <h2 class="title">Kies een liedje !!</h2>
+        <a class="play-song-btn" href="#play">Play Song</a>
+      </div>
+      <div class="btn-group">
+        <button type="button" class="btn">Make You Feel My Love - Adele - Cover Song</button>
+        <button type="button" class="btn">You Won't Relent - Jesus Culture - Cover Song</button>
+        <button type="button" class="btn">Lost Without You - Krezip - Cover Song</button>
+        <button type="button" class="btn">Arms - Christina Perri- Cover Song</button>
+        <button type="button" class="btn">Lucky - Jason Mraz ft. Colbie Caillat - Cover Song</button>
+        <button type="button" class="btn">All Of Me - John Legend - Cover Song</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="pricing" id="pricing">
+    <div class="container">
+      <h2 class="title">Prijzen</h2>
+      <div class="PriceBlocks-sliderContainer">
+        <div class="PriceBlocks-slider">
+          <div class="PriceBlock-container is-previous">
+            <div class="PriceBlock">
+              <div class="PriceBlock-top">
+                <div class="u-flex u-flexCenter PriceBlock-price">
+                  <span class="PriceBlock-dollar">€</span>
+                  <span class="PriceBlock-num">300</span>
+                </div>
+              </div>
+              <ul class="u-list u-textPrimary u-textLarge PriceBlock-list">
+                <li><strong class="u-textPrimary">3 liederen </strong> van het repertoires</li>
+                <li><strong class="u-textPrimary">1 </strong> verzoeknummer</li>
+                <li>Inclusief reiskosten (tot 100km)</li>
+                <li>Gitaar en/of piano begeleiding</li>
+              </ul>
+            </div>
+          </div>
+          <div class="PriceBlock-container">
+            <div class="PriceBlock">
+              <div class="PriceBlock-top">
+                <div class="u-flex u-flexCenter PriceBlock-price">
+                  <span class="PriceBlock-dollar">€</span>
+                  <span class="PriceBlock-num">350</span>
+                </div>
+              </div>
+              <ul class="u-list u-textPrimary u-textLarge PriceBlock-list">
+                <li><strong class="u-textPrimary">3 liederen </strong> van het repertoires</li>
+                <li><strong class="u-textPrimary">2 </strong> verzoeknummers</li>
+                <li>Inclusief reiskosten (tot 100km)</li>
+                <li>Gitaar en/of piano begeleiding</li>
+              </ul>
+            </div>
+          </div>
+          <div class="PriceBlock-container is-next">
+            <div class="PriceBlock">
+              <div class="PriceBlock-top">
+                <div class="u-flex u-flexCenter PriceBlock-price">
+                  <span class="PriceBlock-dollar">€</span>
+                  <span class="PriceBlock-num">385</span>
+                </div>
+              </div>
+              <ul class="u-list u-textPrimary u-textLarge PriceBlock-list">
+                <li><strong class="u-textPrimary">4 liederen </strong> van het repertoires</li>
+                <li><strong class="u-textPrimary">2 </strong> verzoeknummers</li>
+                <li>Includes travel costs (till 100km)</li>
+                <li>Gitaar en/of piano begeleiding</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <h2 class="title">Je kunt mij bereiken via social media</h2>
+    <h3 class="title">Email/Whatsapp voor een vrijblijvend kennismakingsgesprek</h3>
+    <div class="social-media">
+      <a href="https://wa.me/message/ACXU4DTEXXXMA1" target="_blank"><i class="fab fa-whatsapp"></i></a>
+      <a href="mailto:naomi@monclaudi.com"><i class="fa fa-envelope"></i></a>
+      <a href="https://www.instagram.com/monclaudi_music/" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.tiktok.com/@monclaudi_music/" target="_blank"><i class="fab fa-tiktok"></i></a>
+
+      <a href="https://www.facebook.com/people/Monclaudi/61550888403789/" target="_blank"><i class="fab fa-facebook"></i></a>
+
+      <a href="https://twitter.com/monclaudi_music" target="_blank"><i class="fab fa-twitter"></i></a>
+      <a href="https://pinterest.com/monclaudi_music" target="_blank"><i class="fab fa-pinterest"></i></a>
+      <a href="https://linkedin.com/in/monclaudi-music" target="_blank"><i class="fab fa-linkedin"></i></a>
+    </div>
+    <br/><br/>
+    <h4 class="title kvk">KvK nummer: 92002544</h4>
+  </section>
+
+  <!-- Import JS File -->
+  <script src="../JS/script.js"></script>
+  <script src="../RegisterServiceWorker.js"></script>
+  <!-- pricing -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script src="https://unpkg.com/flickity@2.0.5/dist/flickity.pkgd.min.js"></script>
+  <script src="../JS/pricing.js"></script>
+  <!--  -->
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XQ7GCKGSSN"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-XQ7GCKGSSN');
+  </script>
+</body>
+
+</html>
